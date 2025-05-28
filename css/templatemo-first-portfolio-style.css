@@ -494,6 +494,21 @@ strong {
 	font-size: 44px;
 }
 
+.hero-title-size {
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--secondary-color);
+  background: var(--white-color);
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  border-radius: var(--border-radius-large);
+  display: inline-block;
+  padding: 8px 24px;
+}
+
+.hero-title-1{
+  font-size: 20px;
+}
+
 .hero h2 {
 	font-size: 38px;
 }
