@@ -10,6 +10,7 @@ https://templatemo.com/tm-578-first-portfolio
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
+
 :root {
   --white-color:                  #ffffff;
   --primary-color:                #535da1;
@@ -768,8 +769,10 @@ strong {
 }
 
 .projects-title {
-  margin-bottom: 20px;
+    color: var(--secondary-color);
+    font-weight: var(--font-weight-bold) !important;
 }
+
 
 .projects-tag {
   font-size: var(--menu-font-size);
@@ -777,6 +780,50 @@ strong {
   color: var(--secondary-color);
   text-transform: uppercase;
   margin-bottom: 5px;
+}
+
+
+.accordion-body {
+  text-align: justify;
+}
+
+
+
+.section-description {
+  text-align: justify;
+  line-height: 1.8;
+  font-size: 1rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.section-title {
+  font-weight: 600;
+  margin-top: 20px;
+  color: var(--primary-color);
+}
+
+.section-list {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+
+.accordion-preview {
+    color: #555;
+    font-style: italic;
+}
+.accordion-button.collapsed .accordion-preview span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.btn-see-more {
+    cursor: pointer;
+    color: var(--secondary-color);
+    text-decoration: underline;
+    display: inline-block;
+    margin-top: 10px;
 }
 
 
@@ -1017,6 +1064,16 @@ strong {
 	.hero h2 {
 	  font-size: var(--h2-font-size);
 	}
+
+  .projects-title {
+    margin-bottom: 40px;
+    font-size: var(--h2-font-size) !important;
+  }
+
+  .section-description {
+    font-size: 5px !important; /* ou une taille adaptée à ton besoin */
+    line-height: 1.6 !important;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -1147,12 +1204,32 @@ strong {
     border-bottom: 1px solid var(--border-color);
     border-radius: var(--border-radius-small) var(--border-radius-small) 0 0;
   }
+
+  .projects-title {
+    margin-bottom: 30px;
+    font-size: 30px !important;
+  }
+
+  .section-description {
+    font-size: 5px !important; /* ou une taille adaptée à ton besoin */
+    line-height: 1.6 !important;
+  }
 }
 
 @media screen and (max-width: 575px) {
   .navbar .container {
     margin-right: 12px;
     margin-left: 12px;
+  }
+
+  .projects-title {
+    margin-bottom: 20px;
+    font-size: 30px!important;
+  }
+
+  .section-description {
+    font-size: 5px !important; /* ou une taille adaptée à ton besoin */
+    line-height: 1.6 !important;
   }
 }
 
@@ -1197,5 +1274,15 @@ strong {
 
   .hero-image {
     min-width: inherit;
+  }
+
+  .projects-title {
+    margin-bottom: 10px;
+    font-size: 30px !important;
+  }
+
+  .section-description {
+    font-size: 5px !important; /* ou une taille adaptée à ton besoin */
+    line-height: 1.6 !important;
   }
 }

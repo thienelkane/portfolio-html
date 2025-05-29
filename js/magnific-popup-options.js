@@ -30,3 +30,60 @@ $(document).ready(function() {
   magnifPopup();
 
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const accordion = document.getElementById("collapseOne_1");
+    const preview = accordion.closest(".accordion-item").querySelector(".accordion-preview");
+
+    accordion.addEventListener("show.bs.collapse", function () {
+        if (preview) {
+            preview.style.display = "none";
+        }
+    });
+
+    accordion.addEventListener("hide.bs.collapse", function () {
+        if (preview) {
+            preview.style.display = "block";
+        }
+    });
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const accordion = document.getElementById("collapseTwo_1");
+    const preview = accordion.closest(".accordion-item").querySelector(".accordion-preview");
+
+    accordion.addEventListener("show.bs.collapse", function () {
+        if (preview) {
+            preview.style.display = "none";
+        }
+    });
+
+    accordion.addEventListener("hide.bs.collapse", function () {
+        if (preview) {
+            preview.style.display = "block";
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const accordions = document.querySelectorAll(".accordion-collapse");
+
+    accordions.forEach((accordion) => {
+        const preview = accordion.closest(".accordion-item").querySelector(".accordion-preview");
+
+        accordion.addEventListener("show.bs.collapse", function () {
+            if (preview) {
+                preview.style.display = "none";
+            }
+        });
+
+        accordion.addEventListener("hide.bs.collapse", function () {
+            if (preview) {
+                preview.style.display = "block";
+            }
+        });
+    });
+});
+
