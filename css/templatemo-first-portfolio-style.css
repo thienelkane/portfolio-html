@@ -1048,9 +1048,16 @@ strong {
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
 }
+
+.tool-logo:hover {
+  transform: scale(1.05);
+}
+
 .tool-box {
   margin-bottom: 20px;
+  padding: 10px 0;
 }
 
 /*---------------------------------------
@@ -1256,6 +1263,14 @@ strong {
     font-size: 5px !important; /* ou une taille adaptée à ton besoin */
     line-height: 1.6 !important;
   }
+
+    .tool-logo {
+    max-height: 50px; /* Réduction visible sur les petits écrans */
+  }
+
+    .tool-box {
+    padding: 5px 0; /* Moins d’espace vertical */
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1315,5 +1330,13 @@ strong {
     font-size: 20px !important;
     margin-top: 20px;
     color: var(--primary-color);
+  }
+
+    .tool-logo {
+    max-height: 50px; /* Réduction visible sur les petits écrans */
+  }
+
+    .tool-box {
+    padding: 5px 0; /* Moins d’espace vertical */
   }
 }
