@@ -1041,6 +1041,17 @@ strong {
   color: var(--white-color);
 }
 
+.tool-logo {
+  max-height: 80px;
+  object-fit: contain;
+  padding: 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.tool-box {
+  margin-bottom: 20px;
+}
 
 /*---------------------------------------
   RESPONSIVE STYLES               
