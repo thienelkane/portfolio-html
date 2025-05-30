@@ -398,6 +398,7 @@ strong {
   color: var(--secondary-color);
 }
 
+
 .navbar-toggler {
   border: 0;
   padding: 0;
@@ -1044,6 +1045,19 @@ strong {
 /*---------------------------------------
   RESPONSIVE STYLES               
 -----------------------------------------*/
+@media screen and (min-width: 992px) and (max-width: 1599px) {
+
+  .projects-title {
+    font-size: 36px !important; /* ou une valeur plus lisible selon ton design */
+    margin-bottom: 40px !important;
+  }
+
+  .section-description {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+}
+
 @media screen and (min-width: 1600px) {
   .hero {
     padding-top: 380px;
@@ -1278,11 +1292,17 @@ strong {
 
   .projects-title {
     margin-bottom: 10px;
-    font-size: 30px !important;
+    font-size: 27px !important;
   }
 
   .section-description {
     font-size: 5px !important; /* ou une taille adaptée à ton besoin */
     line-height: 1.6 !important;
+  }
+
+    .section-title {
+    font-size: 20px !important;
+    margin-top: 20px;
+    color: var(--primary-color);
   }
 }
