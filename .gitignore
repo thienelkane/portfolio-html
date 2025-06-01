@@ -35,6 +35,7 @@ MANIFEST
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
+services.html
 
 # Unit test / coverage reports
 htmlcov/
@@ -172,5 +173,3 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
-
-services.html
