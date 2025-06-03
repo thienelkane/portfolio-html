@@ -288,7 +288,7 @@ strong {
   background: transparent;
   border-width: 2px;
   border-style: solid;
-  border-color: var(--white-color);
+  border-color: var(--secondary-color);
   color: var(--white-color);
   padding: 8px 22px;
 }
@@ -1199,7 +1199,7 @@ strong {
   .custom-btn,
   .navbar .custom-btn {
     font-size: var(--copyright-text-font-size);
-    background-color: var(--secondary-color);
+    background-color: var(--white-color);
     color: #fff;
     border: none;
     padding: 8px 16px;
@@ -1359,6 +1359,11 @@ strong {
   .navbar .custom-btn {
     font-size: 13px;
     padding: 6px 12px;
+  }
+
+  .navbar .custom-btn {
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
   }
 
   .navbar-icon {
