@@ -561,16 +561,25 @@ strong {
 
 .hero-image-wrap {
   background: var(--white-color);
-  border-radius: 100%;
+  border-radius: 50%;
   width: 350px;
   height: 350px;
-  position: absolute;
+  position: relative;
   z-index: 22;
   top: -50px;
   right: 0;
   left: 0;
   margin: auto;
   pointer-events: none;
+  overflow: hidden;
+}
+
+
+.hero-image-2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; /* centrer le visage */
 }
 
 .hero-image {
@@ -579,6 +588,10 @@ strong {
   top: 0;
   width: 100%;
   min-width: 550px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* remplissage sans déformation */
+  /* object-position: center;   */
 }
 
 .hero svg {
@@ -733,7 +746,6 @@ strong {
 .services-icon {
   font-size: 90px;
   position: relative;
-  bottom: 15px;
 }
 
 .services-thumb:hover .services-price-wrap {
@@ -1132,6 +1144,12 @@ strong {
     font-size: 16px;
     line-height: 1.8;
   }
+
+  .hero-image-wrap {
+    top: -50px;
+    width: 400px;
+    height: 400px;
+  }
 }
 
 @media screen and (min-width: 1600px) {
@@ -1142,8 +1160,8 @@ strong {
 
   .hero-image-wrap {
     top: -50px;
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
   }
 
   .hero-image {
@@ -1248,6 +1266,12 @@ strong {
     padding-bottom: 400px;
   }
 
+  .hero-image-wrap {
+    top: -50px;
+    width: 400px;
+    height: 400px;
+  }
+
   .hero-text {
     top: 0;
     margin-bottom: 120px;
@@ -1274,7 +1298,7 @@ strong {
 
   .services-icon-wrap {
     width: 45%;
-    height: 60%;
+    height: 45%;
   }
 
   .services .col-lg-10 .row .col-lg-6:last-child,
@@ -1331,6 +1355,11 @@ strong {
 
     .tool-box {
     padding: 5px 0; /* Moins d’espace vertical */
+  }
+
+  .services-icon {
+    font-size: 60px;
+    position: relative;
   }
 }
 
