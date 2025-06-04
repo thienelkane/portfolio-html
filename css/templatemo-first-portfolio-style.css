@@ -175,6 +175,10 @@ a:hover, .btn:hover {
   padding-bottom: 120px;
 }
 
+.section-top {
+  padding-top: 100px;
+}
+
 b,
 strong {
   font-weight: var(--font-weight-bold);
@@ -1030,6 +1034,11 @@ strong {
   border-right: 1px solid var(--border-color);
   padding-right: 25px;
   margin-right: 20px;
+}
+
+.designed-text,
+.copyright-text a {
+  color: var(--secondary-color);
 }
 
 .copyright-text-wrap a {
