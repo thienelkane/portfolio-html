@@ -598,8 +598,8 @@ strong {
   position: absolute;
   z-index: 2;
   bottom: 0;
-  right: 0;
-  left: 0;
+  /* right: 0; */
+  /* left: 0; */
   overflow: hidden;
   height: 100%;
   pointer-events: none;
@@ -1263,7 +1263,7 @@ strong {
 
   .hero {
     padding-top: 200px;
-    padding-bottom: 400px;
+    padding-bottom: 0;
   }
 
   .hero-image-wrap {
@@ -1276,6 +1276,10 @@ strong {
     top: 0;
     margin-bottom: 120px;
   }
+
+  .hero-svg {
+    height: 1000px !important;
+  } 
 
   .about-thumb {
     padding-right: 0;
