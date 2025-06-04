@@ -288,7 +288,7 @@ strong {
   background: transparent;
   border-width: 2px;
   border-style: solid;
-  border-color: var(--secondary-color);
+  border-color: var(--white-color);
   color: var(--white-color);
   padding: 8px 22px;
 }
@@ -613,7 +613,7 @@ strong {
   color: var(--secondary-color);
   font-weight: var(--font-weight-bold);
   min-width: 140px;
-  margin-right: 10px;
+  margin-right: 5px;
   padding: 13px 30px;
   display: inline-block;
 }
@@ -1199,9 +1199,9 @@ strong {
   .custom-btn,
   .navbar .custom-btn {
     font-size: var(--copyright-text-font-size);
-    background-color: var(--white-color);
+    /* background-color: var(--white-color);
     color: #fff;
-    border: none;
+    border: none; */
     padding: 8px 16px;
   }
 
@@ -1361,7 +1361,7 @@ strong {
     padding: 6px 12px;
   }
 
-  .navbar .custom-btn {
+    .navbar .custom-btn {
     border-color: var(--secondary-color);
     color: var(--secondary-color);
   }
