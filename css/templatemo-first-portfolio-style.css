@@ -560,6 +560,7 @@ strong {
 }
 
 .hero-image-wrap {
+  overflow: hidden;
   background: var(--white-color);
   border-radius: 50%;
   width: 350px;
@@ -571,7 +572,6 @@ strong {
   left: 0;
   margin: auto;
   pointer-events: none;
-  overflow: hidden;
 }
 
 
